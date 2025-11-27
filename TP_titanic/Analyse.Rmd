@@ -8,10 +8,6 @@ date: "2025-11-27"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ## Statistiques descriptives
 
 
@@ -32,13 +28,9 @@ plot(df$survived~df$passengerClass)
 
 ## representation d'age en fonction du sex
 
-
 ```{r}
 plot(df$age~df$survived)
 ```
 
-```{r}
 
-```
 
-libr
