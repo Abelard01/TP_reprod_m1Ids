@@ -5,7 +5,20 @@ date: "2025-11-27"
 ---
 
 ```{r setup, include=FALSE}
+library(carData)
+library(dplyr)
+library(ggplot2)
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+Dataset Titanic de carData
+
+## Chargement des données
+
+```{r}
+data("TitanicSurvival")
+df <- carData::TitanicSurvival
+head(df)
 ```
 
 ## Statistiques descriptives
@@ -32,5 +45,12 @@ plot(df$survived~df$passengerClass)
 plot(df$age~df$survived)
 ```
 
+## Interpretation_resultat 
+
+Les femmes survivent proportionnellement beaucoup plus que les hommes.
+
+Les passagers de 1ère classe ont un meilleur taux de survie que ceux de 3e classe.
+
+Les survivants ont tendance à être légèrement plus jeunes
 
 
